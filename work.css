@@ -1,0 +1,110 @@
+.experiences {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiences-body {
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.plane {
+    position: fixed;
+    top: 50%;
+    right: -5%;
+    transform: translate(-50% -40%);
+    width: 115%;
+    opacity: 0.25;
+}
+
+.experiences-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 25px;
+}
+
+.experience-date {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.experience-company {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.position {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.experience-description {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.e1 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.experience {
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media(min-width: 950px) {
+
+    .experience {
+        padding: 25px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .experience_left{
+        text-align: right;
+    }
+
+    .experiences-grid {
+        display: grid;
+        grid-template-columns: auto 2px auto;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .line {
+        background-color: var(--text-color-inverse);
+        position: relative;
+    }
+
+    .line::before {
+        content: "¬";
+        display: block;
+        font-size: 40px;
+        color: var(--text-color-inverse);
+        position: absolute;
+        top: -30px;
+        left: -10px;
+    }
+
+    .line::after {
+        top: 200%;
+        z-index: auto;
+    }
+
+}
